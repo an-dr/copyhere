@@ -9,7 +9,7 @@ using `install.py`
 for `requirements.txt`:
 
 ```text
-git+git://github.com/dongrama/copyhere.git@1.0
+git+git://github.com/dongrama/copyhere.git@1.1.0
 ```
 
 ## run
@@ -22,5 +22,7 @@ or
 
 ```python
 import copyhere
-copyhere.start()
+copyhere.start()    # name=None (default) for using source file name
+                    # name='' for user input a new name,
+                    # name="any your new name"
 ```
