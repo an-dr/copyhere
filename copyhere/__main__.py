@@ -16,7 +16,12 @@ def start(name: str = None):
     is_zip = False
 
     # source processing:
-    src_str = easygui.fileopenbox()
+    gui_path2open = os.environ.get("COPYHERE_SOURCEDIR", default=None)
+    if gui_path2open is None:
+        gui_path2open = '*'
+    else:
+        gui_path2open = os.path.join(gui_path2open, '*')
+    src_str = easygui.fileopenbox(default=gui_path2open)
     if src_str is None:
         print("No selection")
         return None  # close if no selection

@@ -9,7 +9,7 @@ using `install.py`
 for `requirements.txt`:
 
 ```text
-git+git://github.com/dongrama/copyhere.git@1.1.1
+git+git://github.com/dongrama/copyhere.git@1.1.2
 ```
 
 ## run
@@ -26,3 +26,5 @@ copyhere.start()    # name=None (default) for using source file name
                     # name='' for user input a new name,
                     # name="any your new name"
 ```
+
+to specify a folder to open in the selection window use `COPYHERE_SOURCEDIR` environment variable
