@@ -36,11 +36,15 @@ def start(name: str = None):
 
     if is_zip:
         zip_ref = zipfile.ZipFile(src, 'r')
-        zip_ref.extractall(here.with_suffix(''))
+        zip_ref.extractall(here.parent)
         zip_ref.close()
     else:
         copy(str(src), str(here))
 
 
 if __name__ == '__main__':
-    start('the name')
+    try:
+        start()
+    except Exception as e:
+        print(e)
+        easygui.msgbox(e, "Error")

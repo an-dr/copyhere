@@ -9,7 +9,7 @@ using `install.py`
 for `requirements.txt`:
 
 ```text
-git+git://github.com/dongrama/copyhere.git@1.1.0
+git+git://github.com/dongrama/copyhere.git@1.1.1
 ```
 
 ## run
