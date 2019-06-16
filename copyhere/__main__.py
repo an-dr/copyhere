@@ -8,6 +8,11 @@ if sys.version_info[0] < 3:
 # def __openfile():
 
 def start(name: str = None):
+    """
+
+    :param name: path to the source file
+    :return: list of files and folders
+    """
     import os
     import zipfile
     import pathlib
@@ -39,12 +44,18 @@ def start(name: str = None):
         here_name = name + src.suffix
     here = here_dir.joinpath(here_name)
 
+    filelist = []
     if is_zip:
         zip_ref = zipfile.ZipFile(src, 'r')
+        zip_files = zip_ref.namelist()
         zip_ref.extractall(here.parent)
         zip_ref.close()
+        for z_file in zip_files:
+            filelist.append(here_dir.joinpath(z_file))
     else:
         copy(str(src), str(here))
+        filelist.append(here)
+    return filelist
 
 
 if __name__ == '__main__':

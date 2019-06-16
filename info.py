@@ -4,11 +4,12 @@ All package info is here. By defaults, opens URL with the repo
 
 info = {
     "name": "copyhere",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Module for copy or unzip a file to cwd",
     "url": "https://github.com/dongrama/copyhere",
     "author": "Andrei Gramakov",
     "author_email": "mail@agramakov.me",
+    "install_requires": [line.rstrip('\n') for line in open("requirements.txt")],  # reading requirements.txt content
     "license": "MIT",
 
 }
