@@ -6,7 +6,7 @@ info = {
     "name": "copyhere",
     "version": "1.1.4",
     "description": "Module for copy or unzip a file to cwd",
-    "url": "https://github.com/dongrama/copyhere",
+    "url": "https://github.com/an-dr/copyhere",
     "author": "Andrei Gramakov",
     "author_email": "mail@agramakov.me",
     "install_requires": [line.rstrip('\n') for line in open("requirements.txt")],  # reading requirements.txt content
