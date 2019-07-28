@@ -2,3 +2,5 @@
 /copyhere.egg-info
 /.idea
 *.pyc
+/build
+/dist

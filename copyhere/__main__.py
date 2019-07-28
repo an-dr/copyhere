@@ -7,11 +7,19 @@ if sys.version_info[0] < 3:
 
 # def __openfile():
 
-def start(name: str = None):
+def start(new_name: str = None):
     """
-
-    :param name: path to the source file
-    :return: list of files and folders
+    copy a file or zip archive content to the cwd
+    
+    Parameters
+    ----------
+    new_name : str, optional
+        new name of a file after the copy, by default None
+    
+    Returns
+    -------
+    [type]
+        [description]
     """
     import os
     import zipfile
@@ -36,12 +44,12 @@ def start(name: str = None):
     src_dir, src_name = src.parent, src.name
 
     # destination processing:
-    if name is None:
+    if new_name is None:
         here_name = src_name
-    elif name == "":
+    elif new_name == "":
         here_name = easygui.enterbox(msg="Enter the name", title=" ", default="")
     else:
-        here_name = name + src.suffix
+        here_name = new_name + src.suffix
     here = here_dir.joinpath(here_name)
 
     filelist = []
