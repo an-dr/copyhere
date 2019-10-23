@@ -1,6 +1,7 @@
 /__pycache__
 /copyhere.egg-info
 /.idea
+/.vscode
 *.pyc
 /build
 /dist

@@ -4,7 +4,7 @@ All package info is here. By defaults, opens URL with the repo
 
 info = {
     "name": "copyhere",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "description": "Module for copy or unzip a file to cwd",
     "url": "https://github.com/an-dr/copyhere",
     "author": "Andrei Gramakov",

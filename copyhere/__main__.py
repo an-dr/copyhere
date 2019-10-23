@@ -35,6 +35,7 @@ def start(new_name: str = None):
     else:
         gui_path2open = os.path.join(gui_path2open, '*')
     src_str = easygui.fileopenbox(default=gui_path2open)
+
     if src_str is None:
         print("No selection")
         return None  # close if no selection

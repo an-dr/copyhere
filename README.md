@@ -1,6 +1,8 @@
 # copyhere
 
-Module for copy or unzip a file to cwd
+A package to copy or unzip a file to cwd
+
+Pypi: https://pypi.org/project/copyhere/
 
 ## install
 
