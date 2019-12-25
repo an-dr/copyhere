@@ -1,5 +1,5 @@
 /__pycache__
-/copyhere.egg-info
+/*.egg-info
 /.idea
 /.vscode
 *.pyc
