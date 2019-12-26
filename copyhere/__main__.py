@@ -72,4 +72,4 @@ if __name__ == '__main__':
         start()
     except Exception as e:
         print(e)
-        easygui.msgbox(e, "Error")
+        easygui.msgbox(str(e), "Error")
